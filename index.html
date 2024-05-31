@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text to Speech Recorder</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center my-4" style="color: red;">Text to Speech <span style="color:black;font-size: 50px;">Recorder</span></h1>
+    <div class="form-group">
+      <textarea id="text" class="form-control" rows="5" placeholder="Enter text here..."></textarea>
+    </div>
+    <div class="form-group">
+      <label for="voices">Select Voice:</label>
+      <select id="voices" class="form-control"></select>
+    </div>
+    <div class="text-center my-2">
+      <button id="speak" class="btn btn-primary mx-1">Speak🔊</button>
+      <button id="record" class="btn btn-success mx-1">Record🔴</button>
+      <button id="stop" class="btn btn-secondary mx-1" disabled style="margin: 10px;">Stop⏹</button>
+    </div>
+    <div id="recordings" class="my-4"></div>
+  </div>
+  <div style="margin: 15px; margin-top: 10px;">
+  <h3 style="color: wheat;background-color:black; display: inline;">How To Use it ?...🤔</h3><br><br>
+    <div style="background-color: blueviolet;color: white;"><p><b>1.Enter some text in the text area.</b></p>
+    <p><b>2.Select a voice from the dropdown menu.</p></b>
+    <p><b>3.Click "Speak" to hear the text read aloud.</p></b>
+    <p><b>4.Click "Record" to start recording the speech.</p></b>
+    <p><b>5.Click "Stop" to stop the recording. You will be prompted to enter a name for the recorded audio, and the recorded audio clip will appear below with playback controls, a delete button, and a download button.</p></b></div>
+  </div>
+    <p style="color:yellow;background-color: red;"><b>This application allows you to choose different voices for text-to-speech, and you can download the recorded audio after listening to it.</p>
+      <p style="background-color: burlywood;text-align: center;">Made By Rajnish Yadav ❤️</p>
+    
+    
+   
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
